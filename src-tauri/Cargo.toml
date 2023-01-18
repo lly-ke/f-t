@@ -1,6 +1,6 @@
 [package]
 name = "f-t"
-version = "2023.1.15"
+version = "23.1.15"
 description = "A Tauri App"
 authors = ["lly ke"]
 license = "MIT"
