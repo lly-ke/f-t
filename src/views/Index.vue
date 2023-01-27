@@ -1,14 +1,16 @@
 <script setup lang="ts">
-import { message } from 'ant-design-vue'
-import { translateText } from '@apis/youdao'
-import { createWin } from '@utils/window'
+import { translateText as translateTextByXiaoniu } from '@apis/xiaoniu';
+import { translateText } from '@apis/youdao';
+import { createWin } from '@utils/window';
+import { message } from 'ant-design-vue';
 
 const text = ref<string>('pig')
 const fyList = reactive<any>({
   youdao: {},
+  xiaoniu: {},
 })
 
-const youdao = toRefs(fyList).youdao
+const { youdao, xiaoniu } = toRefs(fyList)
 
 function handleEnter(e) {
   // mac平台 meta+enter windows平台 ctrl+enter
@@ -20,7 +22,7 @@ function handleEnter(e) {
 async function handleTranslation() {
   if (!text.value.trim()) return
 
-  const res = await translateText({
+  const youdoaRes = await translateText({
     q: text.value,
     // from: 'auto',
     from: 'auto',
@@ -28,11 +30,27 @@ async function handleTranslation() {
     to: 'auto',
   })
 
-  fyList.youdao = res
-  if (res?.errorCode != 0) {
-    message.error('有道云翻译失败, 请请检查配置')
+  const xiaoniuRes = await translateTextByXiaoniu({
+    from: 'en',
+    to: 'zh',
+    src_text: text.value
+  });
+
+
+  let errMsg = '';
+  if (youdoaRes?.errorCode != 0) {
+    errMsg += '有道云翻译失败, 请请检查配置 '
+  } else {
+    fyList.youdao = youdoaRes
   }
-  console.log(res)
+  if (xiaoniuRes?.error_code) {
+    errMsg += '小牛翻译失败, 请请检查配置 '
+  } else {
+    fyList.xiaoniu = xiaoniuRes
+  }
+  if (errMsg) {
+    message.error(errMsg)
+  }
 
   console.log(fyList, '翻译完成')
 }
@@ -86,6 +104,15 @@ id="text" v-model="text" class="text" rows="5" autocomplete="off"
         </div>
         <div v-else>
           {{ youdao.translation }}
+        </div>
+      </div>
+      <div class="mt-5">
+        <hr>
+        <div class="select-none">
+          小牛翻译
+        </div>
+        <div>
+          {{ xiaoniu.tgt_text }}
         </div>
       </div>
     </div>

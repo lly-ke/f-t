@@ -6,7 +6,15 @@ const thirdConfigPath = 'app.json'
 export async function readThirdConfigWithYoudao() {
   const configList = await readThirdConfig()
   if (configList) {
-    return configList.find((i) => i.key === 'youdao') || {}
+    return configList.find((i: any) => i.key === 'youdao') || {}
+  }
+  return {}
+}
+
+export async function readThirdConfigWithXiaoniu() {
+  const configList = await readThirdConfig()
+  if (configList) {
+    return configList.find((i: any) => i.key === 'xiaoniu') || {}
   }
   return {}
 }

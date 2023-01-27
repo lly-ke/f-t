@@ -16,8 +16,7 @@ const thirdConfigList = ref([
     key: 'xiaoniu',
     name: '小牛翻译',
     config: {
-      appKey: '',
-      secretKey: '',
+      apiKey: '',
     }
   }
 ])
@@ -38,7 +37,8 @@ async function saveThridConfig() {
   <div class="flex flex-row h-full">
 
     <div class="w-40 px-1  third-menus">
-      <div v-for="thirdConfig, i in thirdConfigList" :key="i" class="my-1 h-14 third-menu"
+      <div
+v-for="thirdConfig, i in thirdConfigList" :key="i" class="my-1 h-14 third-menu"
         :class="{ 'activate': i === thirdConfigIndex }" @click="thirdConfigIndex = i">
         {{ thirdConfig.name }}
       </div>

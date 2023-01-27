@@ -1,6 +1,5 @@
 import request from '@utils/request'
 import { readThirdConfigWithYoudao } from '@utils/fs'
-import axios from 'axios'
 import { sha256, uuidv4 } from '../utils/math'
 
 export async function translateText(form: any) {
