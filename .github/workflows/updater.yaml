@@ -1,0 +1,30 @@
+name: 发布更新
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+  
+jobs:
+  updater:
+    runs-on: ubuntu-latest
+    # needs: [publish]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.1
+        with:
+          version: 7
+          run_install: true
+      - run: pnpm updater
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy install.json
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./updater
+          force_orphan: true
+

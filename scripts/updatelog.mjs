@@ -4,7 +4,7 @@ import path from 'path';
 const UPDATE_LOG = 'CHANGES.md';
 
 export default function updatelog(tag, type = 'updater') {
-  const reTag = /## v[\d\.]+/;
+  const reTag = /## (v[\d\.]+)/;
 
   const file = path.join(process.cwd(), UPDATE_LOG);
 
@@ -19,7 +19,7 @@ export default function updatelog(tag, type = 'updater') {
 
   content.forEach((line, index) => {
     if (reTag.test(line)) {
-      _tag = line.slice(3).trim();
+      _tag = line.match(reTag)[1];
       if (!tagMap[_tag]) {
         tagMap[_tag] = [];
         return;

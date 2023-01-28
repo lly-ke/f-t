@@ -4,6 +4,7 @@ specifiers:
   '@actions/github': ^5.1.1
   '@tauri-apps/api': 1.2.0
   '@tauri-apps/cli': 1.2.2
+  '@tauri-release/cli': ^0.2.3
   '@types/node': 18.11.18
   '@vitejs/plugin-vue': 4.0.0
   '@vue/devtools': 6.4.5
@@ -43,6 +44,7 @@ dependencies:
 devDependencies:
   '@actions/github': 5.1.1
   '@tauri-apps/cli': 1.2.2
+  '@tauri-release/cli': 0.2.3
   '@types/node': 18.11.18
   '@vitejs/plugin-vue': 4.0.0_vite@4.0.4+vue@3.2.45
   '@vue/devtools': 6.4.5
@@ -668,6 +670,18 @@ packages:
       '@tauri-apps/cli-linux-x64-musl': 1.2.2
       '@tauri-apps/cli-win32-ia32-msvc': 1.2.2
       '@tauri-apps/cli-win32-x64-msvc': 1.2.2
+    dev: true
+
+  /@tauri-release/cli/0.2.3:
+    resolution: {integrity: sha512-Xzn/UtOpu68Ic21GmhTMKWqBXo1Al6TfUkuBy7EMuy6p2LPoLGHT3rND1yjqbqco0drU8wsAU8xGahFuvXLY6A==}
+    engines: {node: '>=v14.16.0'}
+    hasBin: true
+    dependencies:
+      '@actions/github': 5.1.1
+      lodash: 4.17.21
+      node-fetch: 3.3.0
+    transitivePeerDependencies:
+      - encoding
     dev: true
 
   /@types/chai-subset/1.3.3:
