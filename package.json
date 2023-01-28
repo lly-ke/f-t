@@ -7,7 +7,7 @@
     "email": "2720851545@qq.com"
   },
   "scripts": {
-    "dev": "RUST_BACKTRACE=1 concurrently -k \"tauri dev\" \"pnpm devtools\"",
+    "dev": "RUST_BACKTRACE=1;RUST_LOG=debug concurrently -k \"tauri dev\" \"pnpm devtools\"",
     "build": "tauri build",
     "vite:dev": "vite dev",
     "vite:build": "vite build",
