@@ -6,9 +6,10 @@ use tauri::{
 
 pub fn menu() -> SystemTray {
     let tray_menu = SystemTrayMenu::new()
-        // .add_native_item(SystemTrayMenuItem::Separator)
         .add_item(CustomMenuItem::new("show".to_string(), "显示")) // 显示应用窗口
-        .add_item(CustomMenuItem::new("hide".to_string(), "隐藏")); // 隐藏应用窗口
+        .add_item(CustomMenuItem::new("hide".to_string(), "隐藏")) // 隐藏应用窗口
+        .add_native_item(SystemTrayMenuItem::Separator)
+        .add_item(CustomMenuItem::new("quit".to_string(), "退出")); // 退出应用
 
     SystemTray::new().with_menu(tray_menu)
 }
@@ -32,6 +33,9 @@ pub fn handler(app: &AppHandle, event: SystemTrayEvent) {
                         w.hide().unwrap();
                     });
                     // app.hide().unwrap();
+                }
+                "quit" => {
+                    std::process::exit(0);
                 }
                 _ => {}
             }
