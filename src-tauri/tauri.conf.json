@@ -34,7 +34,10 @@
       "windows": {
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
-        "timestampUrl": ""
+        "timestampUrl": "",
+        "wix": {
+          "language": ["zh-CN", "en-US"]
+        }
       }
     },
     "systemTray": {
@@ -42,7 +45,10 @@
       "iconAsTemplate": true
     },
     "updater": {
-      "active": false
+      "active": true,
+      "dialog": true,
+      "endpoints": ["https://lly-ke.github.io/f-t/install.json"],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDU2RDAxRjY2QzdERDhDQjIKUldTeWpOM0haaC9RVmtScktNS1ZPRlB5VTJjNkRLWnp1dzYxL21vRG5UVnZCSmtmZjBaTmc3Q3QK"
     },
     "allowlist": {
       "all": true,
