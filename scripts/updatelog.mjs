@@ -4,7 +4,7 @@ import path from 'path';
 const UPDATE_LOG = 'CHANGELOG.md';
 export default function updatelog(tag, type = 'updater') {
   tag = tag.replace(/^v/, '');
-  const reTag = /([\d\.]+)/;
+  const reTag = /### \[([\d\.]+)/;
 
   const file = path.join(process.cwd(), UPDATE_LOG);
 
