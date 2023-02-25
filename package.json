@@ -7,6 +7,7 @@
     "email": "2720851545@qq.com"
   },
   "scripts": {
+    "release": "standard-version",
     "dev": "concurrently -k \"cross-env RUST_BACKTRACE=1 RUST_LOG=debug tauri dev\" \"pnpm devtools\"",
     "build": "tauri build",
     "vite:dev": "vite dev",
@@ -46,6 +47,7 @@
     "postcss": "8.4.20",
     "postcss-import": "15.1.0",
     "postcss-nesting": "10.2.0",
+    "standard-version": "^9.5.0",
     "tailwindcss": "3.2.4",
     "typescript": "4.9.4",
     "unplugin-auto-import": "0.12.1",
