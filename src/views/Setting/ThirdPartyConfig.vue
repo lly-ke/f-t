@@ -25,9 +25,8 @@ const thirdConfigList = ref([
 
 onMounted(async () => {
   const thirdConfig = await readThirdConfig()
-  if (!!thirdConfig) {
-    thirdConfigList.value = thirdConfig
-  }
+  // 不能使用 = 赋值, 后期加的属性会被清空
+  Object.assign(thirdConfigList.value, thirdConfig)
 })
 
 async function saveThridConfig() {
