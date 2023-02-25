@@ -3,7 +3,7 @@ name: 发布更新
 on:
   push:
     tags:
-      - "v*"
+      - "v"
   workflow_dispatch:
   
 jobs:

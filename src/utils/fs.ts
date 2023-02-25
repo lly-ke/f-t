@@ -3,7 +3,6 @@ import { message } from 'ant-design-vue'
 import { getVersion } from '@tauri-apps/api/app'
 
 const thirdConfigPath = 'app.json'
-const version = await getVersion()
 
 export async function readThirdConfigWithYoudao() {
   const configList = await readThirdConfig()
@@ -27,7 +26,7 @@ export async function readThirdConfig() {
 }
 
 export async function writeThirdConfig(config: any) {
-  writeConfig({ version, config: { third: config } })
+  writeConfig({ version: await getVersion(), config: { third: config } })
 }
 
 async function readConfig() {
