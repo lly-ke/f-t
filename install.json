@@ -1,0 +1,35 @@
+{
+  "version": "v23.2.26",
+  "notes": "### Features\n\n* 更新历史 ([f1d2533](https://github.com/lly-ke/f-t/commit/f1d253343558280d5db1febcebf124cd8f126b4b))\n\n\n### Bug Fixes\n\n* 第三方翻译配置 ([6c9b4e4](https://github.com/lly-ke/f-t/commit/6c9b4e49044fdd9169dfb86317f5292248b6e50f))",
+  "pub_date": "2023-02-25T15:51:20.950Z",
+  "platforms": {
+    "win64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWpOM0haaC9RVmhwV3hLSUtzRFU4NVhKMkRSM2FSODlsYUdWN1F0N2dHK3l6UnhQUVdrUDgyakkrU1VldDkyK1RlUDB6VVlDMjMxUGVWeDhRTFJZMjhtTXo1K2RlTWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjc3MzM5MzY3CWZpbGU6Zi10XzIzLjIuMjZfeDY0X2VuLVVTLm1zaS56aXAKNzR1cEE3YzFaVnRQZnV2VmxCcWt6VVp0d3hpZ2RZQVczTnZxMHhUTVBPdzNtQ3JwcThTbHlEOFl2NmhLZkRUWEJQQ0JvUzBvVVFrRkFBck51UmwwQkE9PQo=",
+      "url": "https://github.com/lly-ke/f-t/releases/download/v23.2.26/f-t_23.2.26_x64_zh-CN.msi.zip"
+    },
+    "linux": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWpOM0haaC9RVnA4V0ZtN2g2RndCK0tScHZadTJDQTNSMzdvcXowRzQ0ZlZzZDFpYTl2Sm5yQkx0d1dpODNhbTg4TGhmdDQ1MFN2M0VEdnhtY2xnUFNCVTE1TFZXWGdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjc3MzM4OTEzCWZpbGU6Zi10XzIzLjIuMjZfYW1kNjQuQXBwSW1hZ2UudGFyLmd6CjdRa2M1VE1QbEJyc1ZpQ3hqNCs1cisvM0UxNG1rMkVFVUpLOVhDd1lkMXRoUWh3Rk9CZkhRVGlTOVZrRjN5bk44YTk1a0dCWkEyUG9hSXlUbm9YVUFBPT0K",
+      "url": "https://github.com/lly-ke/f-t/releases/download/v23.2.26/f-t_23.2.26_amd64.AppImage.tar.gz"
+    },
+    "darwin": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWpOM0haaC9RVnUxbkNXbVhZbFVHMWlGK1ErWWZmdExIS2RFNGJHTzFpTjlpdk8zN2hQSkNMeHdyamNYZ1plQ1Q3TGlnelVQMFZEc1llaGdWajBWV1Z2VFVUZS81c0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjc3MzM5MDYxCWZpbGU6Zi10LmFwcC50YXIuZ3oKNkd6NTNEWmJIUzdZa2l3WGppNXBkYkdaekJHdnBZOGRTaWUvL3VpUHdrT1d2eEsxRmtWL2tFaUlrd3p0S3NnSk9MTG1BZ3hNdzU4djFydDRYRjBkQnc9PQo=",
+      "url": "https://github.com/lly-ke/f-t/releases/download/v23.2.26/f-t.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWpOM0haaC9RVnUxbkNXbVhZbFVHMWlGK1ErWWZmdExIS2RFNGJHTzFpTjlpdk8zN2hQSkNMeHdyamNYZ1plQ1Q3TGlnelVQMFZEc1llaGdWajBWV1Z2VFVUZS81c0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjc3MzM5MDYxCWZpbGU6Zi10LmFwcC50YXIuZ3oKNkd6NTNEWmJIUzdZa2l3WGppNXBkYkdaekJHdnBZOGRTaWUvL3VpUHdrT1d2eEsxRmtWL2tFaUlrd3p0S3NnSk9MTG1BZ3hNdzU4djFydDRYRjBkQnc9PQo=",
+      "url": "https://github.com/lly-ke/f-t/releases/download/v23.2.26/f-t.app.tar.gz"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWpOM0haaC9RVnUxbkNXbVhZbFVHMWlGK1ErWWZmdExIS2RFNGJHTzFpTjlpdk8zN2hQSkNMeHdyamNYZ1plQ1Q3TGlnelVQMFZEc1llaGdWajBWV1Z2VFVUZS81c0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjc3MzM5MDYxCWZpbGU6Zi10LmFwcC50YXIuZ3oKNkd6NTNEWmJIUzdZa2l3WGppNXBkYkdaekJHdnBZOGRTaWUvL3VpUHdrT1d2eEsxRmtWL2tFaUlrd3p0S3NnSk9MTG1BZ3hNdzU4djFydDRYRjBkQnc9PQo=",
+      "url": "https://github.com/lly-ke/f-t/releases/download/v23.2.26/f-t.app.tar.gz"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWpOM0haaC9RVnA4V0ZtN2g2RndCK0tScHZadTJDQTNSMzdvcXowRzQ0ZlZzZDFpYTl2Sm5yQkx0d1dpODNhbTg4TGhmdDQ1MFN2M0VEdnhtY2xnUFNCVTE1TFZXWGdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjc3MzM4OTEzCWZpbGU6Zi10XzIzLjIuMjZfYW1kNjQuQXBwSW1hZ2UudGFyLmd6CjdRa2M1VE1QbEJyc1ZpQ3hqNCs1cisvM0UxNG1rMkVFVUpLOVhDd1lkMXRoUWh3Rk9CZkhRVGlTOVZrRjN5bk44YTk1a0dCWkEyUG9hSXlUbm9YVUFBPT0K",
+      "url": "https://github.com/lly-ke/f-t/releases/download/v23.2.26/f-t_23.2.26_amd64.AppImage.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTeWpOM0haaC9RVmhwV3hLSUtzRFU4NVhKMkRSM2FSODlsYUdWN1F0N2dHK3l6UnhQUVdrUDgyakkrU1VldDkyK1RlUDB6VVlDMjMxUGVWeDhRTFJZMjhtTXo1K2RlTWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjc3MzM5MzY3CWZpbGU6Zi10XzIzLjIuMjZfeDY0X2VuLVVTLm1zaS56aXAKNzR1cEE3YzFaVnRQZnV2VmxCcWt6VVp0d3hpZ2RZQVczTnZxMHhUTVBPdzNtQ3JwcThTbHlEOFl2NmhLZkRUWEJQQ0JvUzBvVVFrRkFBck51UmwwQkE9PQo=",
+      "url": "https://github.com/lly-ke/f-t/releases/download/v23.2.26/f-t_23.2.26_x64_zh-CN.msi.zip"
+    }
+  }
+}
