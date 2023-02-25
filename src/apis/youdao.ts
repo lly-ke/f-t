@@ -6,8 +6,8 @@ export async function translateText(form: any) {
   const youdaoConfig = (await readThirdConfigWithYoudao())?.config
   
 
-  const appKey = youdaoConfig.appKey
-  const secretKey = youdaoConfig.secretKey
+  const appKey = youdaoConfig?.appKey
+  const secretKey = youdaoConfig?.secretKey
 
   const curtime = Math.round(new Date().getTime() / 1000)
   const salt = uuidv4()
