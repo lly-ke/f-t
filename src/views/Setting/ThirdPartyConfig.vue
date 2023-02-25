@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { message } from 'ant-design-vue'
-import { readThirdConfig, writeThirdConfig } from '@utils/fs'
+import { tauri } from '@tauri-apps/api';
+import { appConfigDir } from '@tauri-apps/api/path';
+import { readThirdConfig, writeThirdConfig } from '@utils/fs';
+
 
 const thirdConfigIndex = ref(0)
 const thirdConfigList = ref([
@@ -31,14 +33,17 @@ onMounted(async () => {
 async function saveThridConfig() {
   writeThirdConfig(thirdConfigList.value)
 }
+
+async function openAppConfigDialog() {
+  await tauri.invoke('show_in_folder', { path: await appConfigDir() })
+}
 </script>
 
 <template>
   <div class="flex flex-row h-full">
 
     <div class="w-40 px-1  third-menus">
-      <div
-v-for="thirdConfig, i in thirdConfigList" :key="i" class="my-1 h-14 third-menu"
+      <div v-for="thirdConfig, i in thirdConfigList" :key="i" class="my-1 h-14 third-menu"
         :class="{ 'activate': i === thirdConfigIndex }" @click="thirdConfigIndex = i">
         {{ thirdConfig.name }}
       </div>
@@ -57,6 +62,7 @@ v-for="thirdConfig, i in thirdConfigList" :key="i" class="my-1 h-14 third-menu"
       </div>
 
       <div style="position: absolute; right: 2rem; bottom: 2rem;">
+        <a-button type="primary" @click="openAppConfigDialog" class="mr-4">打开配置文件夹</a-button>
         <a-button type="primary" @click="saveThridConfig">保存</a-button>
       </div>
     </div>
