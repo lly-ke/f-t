@@ -8,6 +8,7 @@ import { defineConfig } from 'vite'
 import { readdirSync, lstatSync } from 'fs'
 import Pages from 'vite-plugin-pages'
 import Inspect from 'vite-plugin-inspect'
+import topLevelAwait from 'vite-plugin-top-level-await'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -36,6 +37,12 @@ export default defineConfig({
       nuxtStyle: true,
     }),
     Inspect(),
+    topLevelAwait({
+      // The export name of top-level await promise for each chunk module
+      promiseExportName: '__tla',
+      // The function to generate import names of top-level await promise in each chunk module
+      promiseImportName: (i) => `__tla_${i}`,
+    }),
   ],
   clearScreen: false,
   envPrefix: ['VITE_', 'TAURI_'],
