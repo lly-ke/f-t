@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [23.2.26](https://github.com/lly-ke/f-t/compare/v23.2.25...v23.2.26) (2023-02-25)
+
+
+### Features
+
+* 更新历史 ([f1d2533](https://github.com/lly-ke/f-t/commit/f1d253343558280d5db1febcebf124cd8f126b4b))
+
+
+### Bug Fixes
+
+* 第三方翻译配置 ([6c9b4e4](https://github.com/lly-ke/f-t/commit/6c9b4e49044fdd9169dfb86317f5292248b6e50f))
+
 ### [23.2.25](https://github.com/lly-ke/f-t/compare/v23.1.15...v23.2.25) (2023-02-25)
 
 
