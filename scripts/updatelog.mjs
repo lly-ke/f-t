@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const UPDATE_LOG = 'CHANGES.md';
+const UPDATE_LOG = 'CHANGELOG.md';
 
 export default function updatelog(tag, type = 'updater') {
   const reTag = /## (v[\d\.]+)/;
@@ -9,7 +9,7 @@ export default function updatelog(tag, type = 'updater') {
   const file = path.join(process.cwd(), UPDATE_LOG);
 
   if (!fs.existsSync(file)) {
-    console.log('Could not found CHANGES.md');
+    console.log('Could not found CHANGELOG.md');
     process.exit(1);
   }
 
@@ -35,7 +35,7 @@ export default function updatelog(tag, type = 'updater') {
 
   if (!tagMap?.[tag]) {
     console.log(
-      `${type === 'release' ? '[CHANGES.md] ' : ''}Tag ${tag} does not exist`
+      `${type === 'release' ? '[CHANGELOG.md] ' : ''}Tag ${tag} does not exist`
     );
     process.exit(1);
   }
