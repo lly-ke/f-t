@@ -19,6 +19,7 @@
     "updater": "node scripts/updater.mjs"
   },
   "dependencies": {
+    "@kangc/v-md-editor": "^2.3.15",
     "@tauri-apps/api": "1.2.0",
     "ant-design-vue": "^3.2.15",
     "axios": "^1.2.2",
