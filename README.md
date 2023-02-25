@@ -1,4 +1,4 @@
-# f-t
+# [f-t](https://github.com/lly-ke/f-t)
 
 基于tauri开发的翻译软件 (不是写来玩的软件和对资源利用率不高的话还是选择electron吧)
 

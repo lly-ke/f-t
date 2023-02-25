@@ -6,6 +6,10 @@ const leftBtns = [
     path: '/setting/thirdpartyconfig'
   },
   {
+    text: '更新历史',
+    path: '/setting/changelog'
+  },
+  {
     text: '关于',
     path: '/setting/about'
   }
