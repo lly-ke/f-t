@@ -597,7 +597,7 @@ dependencies = [
 
 [[package]]
 name = "f-t"
-version = "23.2.25"
+version = "23.2.26"
 dependencies = [
  "env_logger",
  "log",
